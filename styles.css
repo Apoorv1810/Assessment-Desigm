@@ -1,0 +1,556 @@
+/* ---------------------------------------------------         TEST       ---------------------------------------------------------------- */
+
+
+/* .test-h1 {
+    color: white;
+    font-size: 5vw;
+    border: 2px white dashed;
+    width: fit-content;
+    display: inline;
+}
+
+.test-h2 {
+    color: white;
+    font-size: 3vw;
+    border: 2px white dotted;
+    width: fit-content;
+    display: inline;
+}
+ */
+
+
+/* Media Queries */
+
+@media only screen and (max-device-width: 480px) {
+    .footer-main {
+        height: 40vh;
+    }
+    .foot-left,
+    .foot-right {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 900px) {}
+
+
+/*------------------------------------------------------   Creating a custom container  --------------------------------------------------*/
+
+.container {
+    padding: 2vw 4vw 2vw 4vw;
+    overflow: hidden;
+}
+
+.container-a {
+    padding: 10vw 5vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+
+/* ------------------------------------------------      ACTUAL STYLES ------------------------------------------------------------------ */
+
+
+/* Setting a default font and box sizing for the whole design */
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* Making the header section of the design */
+
+.head-section {
+    background: url("images/banner2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 56vw;
+    width: 100%;
+    display: grid;
+}
+
+
+/* Styles for navigation */
+
+.navbar {
+    display: flex;
+    height: 12.5%;
+    align-items: center;
+    /* justify-items: center; */
+    justify-content: space-between;
+    position: relative;
+    /* float: left; */
+}
+
+.logo-img {
+    height: 5vw;
+}
+
+nav {
+    /* position: absolute; */
+    width: 65vw;
+    /* left: 10%; */
+}
+
+nav ul li {
+    list-style: none;
+    margin: 2vw;
+    display: inline;
+}
+
+.list-links {
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 475;
+}
+
+.help-btn {
+    height: 3vw;
+    width: 10vw;
+    /* margin-top: 1rem; */
+    color: black;
+    font-size: 1vw;
+    font-weight: 450;
+    background-color: #f99325;
+    border-radius: 10px;
+    outline: none;
+}
+
+
+/* Styles for banner */
+
+.under-banner {
+    display: flex;
+    height: 100%;
+}
+
+.und-banner-left {
+    width: 30%;
+    height: 30%;
+    margin-top: 5vw;
+}
+
+.heading-main {
+    height: 15vw;
+    width: 20vw;
+    /* text-align: justify; */
+    line-height: 3vw;
+}
+
+.para-a {
+    color: white;
+    font-size: 2vw;
+    font-weight: 450;
+}
+
+.para-b {
+    color: white;
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+.para-c {
+    color: #f99325;
+    font-size: 3vw;
+    font-weight: 450;
+}
+
+.sub-heading {
+    width: 15vw;
+    height: 5vw;
+    color: white;
+    font-size: 1.2vw;
+    margin-top: 2vw;
+    line-height: 1.5vw;
+}
+
+.und-banner-right {
+    width: 70%;
+    float: right;
+}
+
+.leaf {
+    opacity: 1;
+    height: 45vw;
+    margin-left: 20vw;
+    margin-bottom: -30vw;
+}
+
+
+/* About Banner Style */
+
+.about-left {
+    width: 30%;
+    align-content: center;
+}
+
+.about-left-div {
+    height: 20vw;
+    width: 20vw;
+}
+
+.circle {
+    height: 20vw;
+    width: 20vw;
+}
+
+.about-right {
+    width: 70%;
+}
+
+.text-bold {
+    font-size: 3vw;
+    font-weight: 400;
+}
+
+.text-light {
+    font-size: 1.35vw;
+    line-height: 2vw;
+}
+
+
+/* Styles for Values Banner */
+
+.values-banner {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    /* position: relative; */
+    background: url("images/impoverished.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.val-section-left {
+    /* position: absolute; */
+    height: 80vh;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.value-h1 {
+    color: white;
+    font-size: 3.3vw;
+    font-weight: 450;
+}
+
+.hr-orange {
+    height: 2px;
+    width: 35%;
+    background-color: #f99325;
+}
+
+.text-light-wh {
+    font-size: 1.3vw;
+    font-weight: 425;
+    line-height: 1.8vw;
+    color: white;
+    /* text-align: justify; */
+}
+
+.val-section-right {
+    width: 60%;
+    position: absolute;
+    left: 40%;
+}
+
+.row {
+    display: flex;
+    /* align-items: stretch; */
+}
+
+.col-or {
+    padding: 0.72vw 1vw;
+    background-color: #f99325;
+    width: 33.33%;
+    color: black;
+}
+
+.col-wh {
+    padding: 0.73vw 1vw;
+    background-color: white;
+    width: 33.33%;
+    color: black;
+}
+
+
+/* Programs BAnner */
+
+.programs-banner {
+    background-color: #f99325;
+    width: 100%;
+    height: 70vh;
+    align-items: center;
+    position: relative;
+    display: flex;
+}
+
+.programs-left {
+    width: 30%;
+}
+
+.inner-pl {}
+
+.inner-article {
+    /* position: relative; */
+    border: solid 7px #E68221;
+    width: 25vw;
+    height: 50vh;
+    padding: 1vw 2vw;
+}
+
+.inner-heading {
+    font-size: 2vw;
+    font-weight: 350;
+}
+
+.inner-para {
+    font-size: 1vw;
+}
+
+.heading-pr {
+    position: absolute;
+    top: 8%;
+    left: 45%;
+    font-size: 3vw;
+    font-weight: 350;
+}
+
+.programs-right {
+    width: 70%;
+    height: 70vh;
+    background-image: url("images/tree.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 55vh;
+    background-position-y: bottom;
+}
+
+.circle-tree {
+    height: 5vw;
+    width: 5vw;
+    border-radius: 40px;
+    background-color: white;
+}
+
+caption {
+    font-size: 1vw;
+}
+
+.animal-care,
+.healthcare,
+.disaster,
+.covid,
+.sustain,
+.education,
+.skill {
+    text-align: center;
+    position: absolute;
+}
+
+div.programs-right img {
+    height: 2.7vw;
+    width: 2.7vw;
+}
+
+.animal-care {
+    left: 51%;
+    top: 25%;
+}
+
+.healthcare {
+    left: 61%;
+    top: 28%;
+}
+
+.disaster {
+    top: 31%;
+    left: 71%
+}
+
+.covid {
+    left: 53%;
+    top: 46%;
+}
+
+.education {
+    top: 46%;
+    left: 62%;
+}
+
+.sustain {
+    top: 65%;
+    left: 59%;
+}
+
+.skill {
+    top: 57%;
+    left: 71%;
+}
+
+
+/* Carousel */
+
+.carousel {
+    background-color: #212121;
+    width: 100%;
+    height: 40%;
+}
+
+.carousel-heading {
+    font-size: 3vw;
+    font-weight: 450;
+    color: white;
+    text-align: center;
+}
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    max-width: 80%;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* Footer Section style */
+
+.foot-section {
+    background: url("images/huddle.png");
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-main {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.foot-right-subtext {
+    font-size: 1.3vw;
+    color: white;
+}
+
+.foot-left,
+.foot-right {
+    width: 50%;
+}
+
+.heading-white,
+.heading-orange {
+    font-size: 3vw;
+    font-weight: 450;
+}
+
+.heading-orange {
+    color: #f99325;
+}
+
+.heading-white {
+    color: white;
+}
+
+.foot-right-subtext {
+    font-size: 1.4vw;
+}
+
+.footer-hr {
+    width: 90%;
+    height: 2px;
+    background-color: rgba(141, 135, 135, 0.541);
+    position: absolute;
+    top: 80%;
+}
+
+.brochure {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 1vw;
+    height: 7%;
+    border-radius: 10px;
+    color: white;
+    position: absolute;
+    bottom: 6%;
+    left: 10%;
+}
+
+.copyrights {
+    color: white;
+    position: absolute;
+    font-size: 1vw;
+    bottom: 7%;
+    right: 20%;
+}
